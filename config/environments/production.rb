@@ -1,5 +1,5 @@
 Rails.application.configure do
-   config.webpacker.check_yarn_integrity = false  # Settings specified here will take precedence over those in config/application.rb.
+  config.webpacker.check_yarn_integrity = false  # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
   config.cache_classes = true
@@ -24,8 +24,8 @@ Rails.application.configure do
   config.public_file_server.enabled = ENV['RAILS_SERVE_STATIC_FILES'].present?
 
   # Compress JavaScripts and CSS.
+  config.assets.css_compressor = :yui
   config.assets.js_compressor = :uglifier
-  # config.assets.css_compressor = :sass
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = false
@@ -61,6 +61,7 @@ Rails.application.configure do
   # config.active_job.queue_adapter     = :resque
   # config.active_job.queue_name_prefix = "twitter-time_#{Rails.env}"
   config.action_mailer.perform_caching = false
+  config.action_mailer.default_url_options = { host: 'https://twitter-time.herokuapp.com/', port: 443 }
 
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.

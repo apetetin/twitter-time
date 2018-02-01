@@ -5,6 +5,18 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+ruby '2.3.5'
+
+# Le Wagon config
+gem 'autoprefixer-rails'
+gem 'bootstrap-sass' # Bootstrap v3
+gem 'font-awesome-sass'
+gem 'simple_form'
+gem 'figaro'
+gem 'cloudinary'
+gem 'carrierwave', '~> 1.2'
+gem 'devise'
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
