@@ -16,6 +16,7 @@ gem 'figaro'
 gem 'cloudinary'
 gem 'carrierwave', '~> 1.2'
 gem 'devise'
+gem 'omniauth-twitter'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
